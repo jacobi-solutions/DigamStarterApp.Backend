@@ -16,9 +16,10 @@ steps:
       - 'gcloud'
       - 'run'
       - 'deploy'
-      - 'backend' # 🔄 Update if needed
+      - 'backend'
       - '--image=gcr.io/$PROJECT_ID/backend'
       - '--platform=managed'
       - '--region=us-central1'
       - '--allow-unauthenticated'
       - '--port=8080'
+      - '--timeout=300s'  # Extended timeout

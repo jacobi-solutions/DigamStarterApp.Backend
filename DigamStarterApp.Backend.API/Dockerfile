@@ -14,4 +14,4 @@ COPY --from=build /app/out ./
 
 # Expose the API port
 EXPOSE 8080
-ENTRYPOINT ["dotnet", "backend.dll"]
+ENTRYPOINT ["dotnet", "DigamStarterApp.Backend.API.dll"]
